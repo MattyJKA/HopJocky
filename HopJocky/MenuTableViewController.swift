@@ -1,5 +1,5 @@
 //
-//  BarTableViewController.swift
+//  MenuTableViewController.swift
 //  HopJocky
 //
 //  Created by Matt Union on 3/22/16.
@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import Firebase
 
-class BarTableViewController: UITableViewController {
-    var bars = [Bar]()
+class MenuTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,30 +18,6 @@ class BarTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        BARS_REF.observeEventType(.Value, withBlock: { snapshot in
-            
-            //the snapshot is a current look at our bars data
-            //print(snapshot.value)
-            
-            self.bars = []
-            
-            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-                for snap in snapshots{
-                    //make our bars array for tableview
-                    if let barDict = snap.value as? Dictionary<String, AnyObject>{
-                        let name = snap.key
-                        let bar = Bar(key: name, dict: barDict)
-                        
-                        //insert new bar object into bar array
-                        self.bars.insert(bar, atIndex: 0)
-                    }
-                }
-            }
-            //be sure that the tableView updates when there is new data
-            self.tableView.reloadData()
-        
-        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,22 +28,24 @@ class BarTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bars.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellid", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
-        let bar = bars[indexPath.row]
-        cell.textLabel?.text = bar.name
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -106,20 +82,14 @@ class BarTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        let indexPath = self.tableView.indexPathForSelectedRow
-        
-        let barDetailView = segue.destinationViewController as! BarDetailViewController
-        
-        barDetailView.barObj = bars[indexPath!.row]
     }
-
+    */
 
 }

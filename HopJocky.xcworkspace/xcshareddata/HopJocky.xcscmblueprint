@@ -1,15 +1,15 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BAF6EAFCD1740C016F30B71EB024AE8C60CC311B",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F56D504849F330BBAC9D66CDE5A82FA79C2DC56",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "BAF6EAFCD1740C016F30B71EB024AE8C60CC311B" : 0,
+    "8F56D504849F330BBAC9D66CDE5A82FA79C2DC56" : 0,
     "64EED1712A8052266A7248A23A50263E14038F3F" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "08E0C1FA-A9C1-45D8-90F9-7BD7479D9A67",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "BAF6EAFCD1740C016F30B71EB024AE8C60CC311B" : "HopJocky\/",
+    "8F56D504849F330BBAC9D66CDE5A82FA79C2DC56" : "HopJocky\/",
     "64EED1712A8052266A7248A23A50263E14038F3F" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "HopJocky",
@@ -24,7 +24,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MattyJKA\/HopJocky.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BAF6EAFCD1740C016F30B71EB024AE8C60CC311B"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F56D504849F330BBAC9D66CDE5A82FA79C2DC56"
     }
   ]
 }

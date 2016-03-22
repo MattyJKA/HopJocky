@@ -22,6 +22,7 @@
 		EDCF44171CA19B5D004A6A6C /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44161CA19B5D004A6A6C /* Beer.swift */; };
 		EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */; };
 		EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */; };
+		EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EDCF44161CA19B5D004A6A6C /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
 		EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDetailViewController.swift; sourceTree = "<group>"; };
+		EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EDCF44121CA09930004A6A6C /* ProfileViewController.swift */,
 				EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */,
 				EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */,
+				EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */,
 				EDCF43D81C912EFD004A6A6C /* Main.storyboard */,
 				EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */,
 				EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */,
@@ -245,6 +248,7 @@
 				EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */,
 				EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */,
 				EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */,
+				EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */,
 				EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */,
 				EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */,
 				EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */,
