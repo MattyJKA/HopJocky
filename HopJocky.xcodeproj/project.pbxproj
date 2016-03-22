@@ -23,6 +23,8 @@
 		EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */; };
 		EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */; };
 		EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */; };
+		EDCF44231CA1F86C004A6A6C /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */; };
+		EDCF44251CA1FD5D004A6A6C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
 		EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDetailViewController.swift; sourceTree = "<group>"; };
 		EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */,
 				EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */,
 				EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */,
+				EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */,
+				EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */,
 				EDCF43D81C912EFD004A6A6C /* Main.storyboard */,
 				EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */,
 				EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */,
@@ -252,6 +258,8 @@
 				EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */,
 				EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */,
 				EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */,
+				EDCF44231CA1F86C004A6A6C /* BeerDetailViewController.swift in Sources */,
+				EDCF44251CA1FD5D004A6A6C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

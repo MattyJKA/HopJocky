@@ -9,50 +9,50 @@
 import Foundation
 
 class Bar{
-    private var _name: String!
-    private var _beers: Array<Beer>!
-    private var _happyHour: String!
-    private var _hours: String!
-    private var _location: String!
+    private var Name: String!
+    private var Beers: Array<Beer>!
+    private var HappyHour: String!
+    private var Hours: String!
+    private var Location: String!
     
     var name: String {
-        return _name
+        return Name
     }
     
     var beerList: Array<Beer> {
-        return _beers
+        return Beers
     }
     
     var happyHour: String{
-        return _happyHour
+        return HappyHour
     }
     
     var hours: String {
-        return _hours
+        return Hours
     }
     
     var location: String {
-        return _location
+        return Location
     }
     
     //initilize bar
     init(key: String, dict: Dictionary<String, AnyObject>){
-        self._name = key
+        self.Name = key
         
         if let barBeers = dict["Beers"] as? Array<Beer> {
-            self._beers = barBeers
+            self.Beers = barBeers
         }
         
         if let barHappyHour = dict["Happy Hour"] as? String {
-            self._happyHour = barHappyHour
+            self.HappyHour = barHappyHour
         }
         
         if let barHours = dict["Hours"] as? String {
-            self._hours = barHours
+            self.Hours = barHours
         }
         
         if let barLocation = dict["Location"] as? String {
-            self._location = barLocation
+            self.Location = barLocation
         }
     }
     

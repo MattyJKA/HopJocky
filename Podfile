@@ -8,5 +8,7 @@ target 'HopJocky' do
 
 pod 'Firebase', '>= 2.5.0'
 
+pod 'GoogleMaps'
+
 end
 

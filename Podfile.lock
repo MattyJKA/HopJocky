@@ -1,10 +1,13 @@
 PODS:
   - Firebase (2.5.1)
+  - GoogleMaps (1.12.3)
 
 DEPENDENCIES:
   - Firebase (>= 2.5.0)
+  - GoogleMaps
 
 SPEC CHECKSUMS:
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  GoogleMaps: a4ac67918d0b5ba5f6b9893ac80487e357779e6c
 
 COCOAPODS: 0.39.0
