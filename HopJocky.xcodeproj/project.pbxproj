@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */; };
+		EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */; };
+		EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43D81C912EFD004A6A6C /* Main.storyboard */; };
+		EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */; };
+		EDCF43DF1C912EFD004A6A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */; };
+		EDCF43E21C912EFD004A6A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */; };
+		EDCF43EA1C9135F7004A6A6C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43E91C9135F7004A6A6C /* BaseService.swift */; };
+		EDCF43EC1C913799004A6A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43EB1C913799004A6A6C /* LoginViewController.swift */; };
+		EDCF43EE1C9137BA004A6A6C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */; };
+		EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44101CA09921004A6A6C /* HomeViewController.swift */; };
+		EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44121CA09930004A6A6C /* ProfileViewController.swift */; };
+		EDCF44151CA19990004A6A6C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44141CA19990004A6A6C /* Bar.swift */; };
+		EDCF44171CA19B5D004A6A6C /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44161CA19B5D004A6A6C /* Beer.swift */; };
+		EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */; };
+		EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.debug.xcconfig"; sourceTree = "<group>"; };
+		6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.release.xcconfig"; sourceTree = "<group>"; };
+		95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopJocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCF43D11C912EFD004A6A6C /* HopJocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopJocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDCF43D91C912EFD004A6A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDCF43DC1C912EFD004A6A6C /* HopJocky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HopJocky.xcdatamodel; sourceTree = "<group>"; };
+		EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDCF43E11C912EFD004A6A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDCF43E31C912EFD004A6A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCF43E91C9135F7004A6A6C /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		EDCF43EB1C913799004A6A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		EDCF44101CA09921004A6A6C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EDCF44121CA09930004A6A6C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EDCF44141CA19990004A6A6C /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		EDCF44161CA19B5D004A6A6C /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
+		EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDCF43CE1C912EFD004A6A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1419A2F94313F1C035B57E43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C2FDEC38B62CCDE82E045F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */,
+				6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDCF43C81C912EFD004A6A6C = {
+			isa = PBXGroup;
+			children = (
+				EDCF43D31C912EFD004A6A6C /* HopJocky */,
+				EDCF43D21C912EFD004A6A6C /* Products */,
+				2C2FDEC38B62CCDE82E045F8 /* Pods */,
+				1419A2F94313F1C035B57E43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDCF43D21C912EFD004A6A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF43D11C912EFD004A6A6C /* HopJocky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCF43D31C912EFD004A6A6C /* HopJocky */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */,
+				EDCF43E91C9135F7004A6A6C /* BaseService.swift */,
+				EDCF43EB1C913799004A6A6C /* LoginViewController.swift */,
+				EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */,
+				EDCF44101CA09921004A6A6C /* HomeViewController.swift */,
+				EDCF44141CA19990004A6A6C /* Bar.swift */,
+				EDCF44161CA19B5D004A6A6C /* Beer.swift */,
+				EDCF44121CA09930004A6A6C /* ProfileViewController.swift */,
+				EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */,
+				EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */,
+				EDCF43D81C912EFD004A6A6C /* Main.storyboard */,
+				EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */,
+				EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */,
+				EDCF43E31C912EFD004A6A6C /* Info.plist */,
+				EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */,
+			);
+			path = HopJocky;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDCF43D01C912EFD004A6A6C /* HopJocky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDCF43E61C912EFD004A6A6C /* Build configuration list for PBXNativeTarget "HopJocky" */;
+			buildPhases = (
+				A7278E4701EB2C1EC76D27C0 /* Check Pods Manifest.lock */,
+				EDCF43CD1C912EFD004A6A6C /* Sources */,
+				EDCF43CE1C912EFD004A6A6C /* Frameworks */,
+				EDCF43CF1C912EFD004A6A6C /* Resources */,
+				C7AC660B4092C6C6B442A8B8 /* Embed Pods Frameworks */,
+				1813F9F58DA992472CAAC2FE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HopJocky;
+			productName = HopJocky;
+			productReference = EDCF43D11C912EFD004A6A6C /* HopJocky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDCF43C91C912EFD004A6A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = cs378;
+				TargetAttributes = {
+					EDCF43D01C912EFD004A6A6C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = EDCF43CC1C912EFD004A6A6C /* Build configuration list for PBXProject "HopJocky" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDCF43C81C912EFD004A6A6C;
+			productRefGroup = EDCF43D21C912EFD004A6A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDCF43D01C912EFD004A6A6C /* HopJocky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDCF43CF1C912EFD004A6A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCF43E21C912EFD004A6A6C /* LaunchScreen.storyboard in Resources */,
+				EDCF43DF1C912EFD004A6A6C /* Assets.xcassets in Resources */,
+				EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1813F9F58DA992472CAAC2FE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7278E4701EB2C1EC76D27C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7AC660B4092C6C6B442A8B8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDCF43CD1C912EFD004A6A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCF43EE1C9137BA004A6A6C /* CreateAccountViewController.swift in Sources */,
+				EDCF44171CA19B5D004A6A6C /* Beer.swift in Sources */,
+				EDCF44151CA19990004A6A6C /* Bar.swift in Sources */,
+				EDCF43EC1C913799004A6A6C /* LoginViewController.swift in Sources */,
+				EDCF43EA1C9135F7004A6A6C /* BaseService.swift in Sources */,
+				EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */,
+				EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */,
+				EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */,
+				EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */,
+				EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */,
+				EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDCF43D81C912EFD004A6A6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDCF43D91C912EFD004A6A6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDCF43E11C912EFD004A6A6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDCF43E41C912EFD004A6A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDCF43E51C912EFD004A6A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDCF43E71C912EFD004A6A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HopJocky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs378.HopJocky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDCF43E81C912EFD004A6A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HopJocky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs378.HopJocky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDCF43CC1C912EFD004A6A6C /* Build configuration list for PBXProject "HopJocky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCF43E41C912EFD004A6A6C /* Debug */,
+				EDCF43E51C912EFD004A6A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDCF43E61C912EFD004A6A6C /* Build configuration list for PBXNativeTarget "HopJocky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCF43E71C912EFD004A6A6C /* Debug */,
+				EDCF43E81C912EFD004A6A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDCF43DC1C912EFD004A6A6C /* HopJocky.xcdatamodel */,
+			);
+			currentVersion = EDCF43DC1C912EFD004A6A6C /* HopJocky.xcdatamodel */;
+			path = HopJocky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EDCF43C91C912EFD004A6A6C /* Project object */;
+}
