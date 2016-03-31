@@ -11,19 +11,19 @@ import Foundation
 class Beer{
     private var Key: String!
     private var Name: String!
-    private var ABV: String!
-    private var Price: String!
+    private var ABV: Int!
+    private var Price: Int!
     private var Style: String!
     
     var name: String {
         return Name
     }
     
-    var abv: String {
+    var abv: Int {
         return ABV
     }
     
-    var price: String{
+    var price: Int{
         return Price
     }
     
@@ -39,12 +39,18 @@ class Beer{
             self.Name = beerName
         }
         
-        if let beerABV = dict["ABV"] as? String {
+        if let beerABV = dict["ABV"] as? Int {
             self.ABV = beerABV
         }
+        else{
+            self.ABV = -1
+        }
         
-        if let beerPrice = dict["Price"] as? String {
+        if let beerPrice = dict["Price"] as? Int {
             self.Price = beerPrice
+        }
+        else{
+            self.Price = -1
         }
         
         if let beerStyle = dict["Style"] as? String {

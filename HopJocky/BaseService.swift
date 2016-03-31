@@ -12,9 +12,11 @@ import Firebase
 let BASE_URL = "https://hopjocky.firebaseio.com"
 
 let FIREBASE_REF = Firebase(url: BASE_URL)
-let _USERS_REF = Firebase(url: "\(BASE_URL)/users")
+let USERS_REF = Firebase(url: "\(BASE_URL)/users")
 let BARS_REF = Firebase(url: "\(BASE_URL)/Bars")
 
+//user object for global use
+var user: User?
 
 var CURRENT_USER: Firebase{
     let userID = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String

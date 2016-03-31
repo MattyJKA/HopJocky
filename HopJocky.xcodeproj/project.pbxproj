@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */; };
+		EDA278471CAD757C006883EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA278461CAD757C006883EB /* User.swift */; };
 		EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */; };
 		EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43D81C912EFD004A6A6C /* Main.storyboard */; };
 		EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 		2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.debug.xcconfig"; sourceTree = "<group>"; };
 		6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.release.xcconfig"; sourceTree = "<group>"; };
 		95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopJocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA278461CAD757C006883EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EDCF43D11C912EFD004A6A6C /* HopJocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopJocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDCF43D91C912EFD004A6A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,17 +106,8 @@
 			children = (
 				EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */,
 				EDCF43E91C9135F7004A6A6C /* BaseService.swift */,
-				EDCF43EB1C913799004A6A6C /* LoginViewController.swift */,
-				EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */,
-				EDCF44101CA09921004A6A6C /* HomeViewController.swift */,
-				EDCF44141CA19990004A6A6C /* Bar.swift */,
-				EDCF44161CA19B5D004A6A6C /* Beer.swift */,
-				EDCF44121CA09930004A6A6C /* ProfileViewController.swift */,
-				EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */,
-				EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */,
-				EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */,
-				EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */,
-				EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */,
+				EDCF44261CA23731004A6A6C /* Model */,
+				EDCF44271CA2374D004A6A6C /* ViewControllers */,
 				EDCF43D81C912EFD004A6A6C /* Main.storyboard */,
 				EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */,
 				EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */,
@@ -122,6 +115,32 @@
 				EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */,
 			);
 			path = HopJocky;
+			sourceTree = "<group>";
+		};
+		EDCF44261CA23731004A6A6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDA278461CAD757C006883EB /* User.swift */,
+				EDCF44141CA19990004A6A6C /* Bar.swift */,
+				EDCF44161CA19B5D004A6A6C /* Beer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EDCF44271CA2374D004A6A6C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF43EB1C913799004A6A6C /* LoginViewController.swift */,
+				EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */,
+				EDCF44101CA09921004A6A6C /* HomeViewController.swift */,
+				EDCF44121CA09930004A6A6C /* ProfileViewController.swift */,
+				EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */,
+				EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */,
+				EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */,
+				EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */,
+				EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +273,7 @@
 				EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */,
 				EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */,
 				EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */,
+				EDA278471CAD757C006883EB /* User.swift in Sources */,
 				EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */,
 				EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */,
 				EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */,

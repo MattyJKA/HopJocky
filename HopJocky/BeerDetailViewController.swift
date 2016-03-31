@@ -20,9 +20,21 @@ class BeerDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         NameLabel.text = beerObj?.name
-        ABVLabel.text = beerObj?.abv
-        PriceLabel.text = beerObj?.price
         StyleLabel.text = beerObj?.style
+        
+        if self.beerObj?.abv == -1{
+            ABVLabel.text = "Unknown"
+        }
+        else{
+            ABVLabel.text = String(beerObj!.abv) + "%"
+        }
+        
+        if self.beerObj?.price == -1{
+            PriceLabel.text = "Unknown"
+        }
+        else{
+            PriceLabel.text = "$" + String(beerObj!.price)
+        }
 
     }
 

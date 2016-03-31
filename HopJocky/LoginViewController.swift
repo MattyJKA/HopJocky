@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logoutButton: UIButton!
@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -32,16 +34,16 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.emailTextField.resignFirstResponder()
+        self.passwordTextField.resignFirstResponder()
+        return true
     }
-    */
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
     @IBAction func loginAction(sender: AnyObject) {
         let email = self.emailTextField.text
         let password = self.passwordTextField.text
@@ -54,17 +56,29 @@ class LoginViewController: UIViewController {
                     print("Logged In :)")
                     self.logoutButton.hidden = false
                     
+                    //create Global User Object
+                    user = User(uid: authData.uid)
+                    //update all data fields in user object with database info
+                    user!.pull()
+                    
                     //segue to homepage
                     self.performSegueWithIdentifier("homeSegue", sender: nil)
 
                 }
                 else{
-                    print(error)
+                    //print(error)
+                    let alert = UIAlertController(title: "Error", message: "Email and password doesn't match any users in our database. Please tap the 'Create Account' button to create an account if you don't have one", preferredStyle: .Alert)
+                    
+                    let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                    
+                    alert.addAction(action)
+                    
+                    self.presentViewController(alert, animated: true, completion: nil)
                 }
             })
         }
         else{
-            let alert = UIAlertController(title: "Error", message: "Enter Email and Password.", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Error", message: "Enter email and password.", preferredStyle: .Alert)
             
             let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
             
