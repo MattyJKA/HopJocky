@@ -105,6 +105,14 @@
                                     <action selector="addBeercred:" destination="ahe-aA-fpo" eventType="touchUpInside" id="GUx-F2-NAB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uH-qM-NMD">
+                                <rect key="frame" x="337" y="77" width="57" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="l2e-tS-zbM" kind="show" id="Wdd-0t-TIY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85735119339999999" blue="0.22868504579999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -117,6 +125,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frm-fJ-alO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2330" y="-577"/>
+        </scene>
+        <!--Beerchievements Collection View Controller-->
+        <scene sceneID="u7d-Sf-b3B">
+            <objects>
+                <collectionViewController id="l2e-tS-zbM" customClass="BeerchievementsCollectionViewController" customModule="HopJocky" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="03H-9P-FVa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="coB-dP-1Vg">
+                            <size key="itemSize" width="283" height="289"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Xge-sE-AY8" customClass="BeerchievementCollectionViewCell" customModule="HopJocky" customModuleProvider="target">
+                                <rect key="frame" x="65.5" y="64" width="283" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="283" height="289"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ6-ND-WmZ">
+                                            <rect key="frame" x="8" y="4" width="275" height="281"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="BeerchievementImage" destination="eJ6-ND-WmZ" id="DaS-PI-lPv"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="l2e-tS-zbM" id="mdJ-Yf-9Lt"/>
+                            <outlet property="delegate" destination="l2e-tS-zbM" id="wLd-De-2om"/>
+                        </connections>
+                    </collectionView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJP-RD-n2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="-766"/>
         </scene>
         <!--Bar Table View Controller-->
         <scene sceneID="IOa-BM-exx">
@@ -376,6 +427,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhJ-rX-0OT">
+                                <rect key="frame" x="143" y="425" width="129" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="I've Had This Beer!"/>
+                                <connections>
+                                    <action selector="HadBeerButton:" destination="UJB-ow-xfB" eventType="touchUpInside" id="Jhs-DF-MNt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85735119339999999" blue="0.22868504579999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

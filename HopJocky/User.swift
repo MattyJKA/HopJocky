@@ -16,9 +16,9 @@ class User{
     private var Beercred: Int?
     private var Title: String?
     private var BarsVisted: Array<Array<Any>>? //needs to keep track of bars visted as well as how many times visted
-    private var BeersHad: Array<String>?
-    private var Beerchievements: Array<Int>?
-    private var ProfilePic: NSObjectFileImage //not sure what type this should be yet
+    private var BeersHad = Array<String>()
+    private var Beerchievements = Array<Int>()
+    private var ProfilePic: String?
     
     private var USER_REF: Firebase?
 
@@ -38,6 +38,10 @@ class User{
         return self.Beercred!
     }
     
+    var beerchievements: Array<Int>{
+        return self.Beerchievements
+    }
+    
     init(uid: String){
         self.Uid = uid
         self.Email = nil
@@ -45,8 +49,6 @@ class User{
         self.Beercred = nil
         self.Title = nil
         self.BarsVisted = nil
-        self.BeersHad = nil
-        self.Beerchievements = nil
         self.ProfilePic = nil
         
         self.USER_REF = Firebase(url: "\(BASE_URL)/users/\(self.Uid!)")
@@ -56,6 +58,15 @@ class User{
         self.Beercred! += earnedCred
     }
     
+    func addBeer(beerName: String){
+        if BeersHad.isEmpty{
+            Beerchievements.append(1)
+            //add alert controller to tell user they got a beerchievement, maybe it's own func
+        }
+        BeersHad.append(beerName)
+        checkForBeerchievement()
+    }
+    
     //check user into a bar
     func checkin(barName:String) -> String{
         return barName
@@ -63,7 +74,7 @@ class User{
     
     //check if user has met requirements for any Beerchievemnt
     func checkForBeerchievement(){
-        
+        //add alert controller to tell user they got a beerchievement, maybe it's own func
     }
     
     //update database with new user info
@@ -81,6 +92,7 @@ class User{
                 self.Email = userDictionary["email"] as? String
                 self.Password = userDictionary["password"] as? String
                 self.Beercred = (userDictionary["beercred"] as? Int)!
+                //add update for beerlist beerchievements
             }
         })
  

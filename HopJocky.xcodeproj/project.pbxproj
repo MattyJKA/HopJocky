@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */; };
+		ED7DB3051CB301CD00DDEE67 /* Beerchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */; };
+		ED7DB30A1CB305ED00DDEE67 /* hopper.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7DB3081CB305ED00DDEE67 /* hopper.png */; };
+		ED7DB30D1CB3062700DDEE67 /* firstBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7DB30C1CB3062700DDEE67 /* firstBeer.png */; };
+		ED7DB3111CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3101CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift */; };
+		ED7DB3131CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3121CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift */; };
 		EDA278471CAD757C006883EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA278461CAD757C006883EB /* User.swift */; };
+		EDA2784B1CAD8D2F006883EB /* Beerchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2784A1CAD8D2F006883EB /* Beerchievement.swift */; };
 		EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */; };
 		EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43D81C912EFD004A6A6C /* Main.storyboard */; };
 		EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */; };
@@ -32,7 +38,13 @@
 		2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.debug.xcconfig"; sourceTree = "<group>"; };
 		6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.release.xcconfig"; sourceTree = "<group>"; };
 		95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopJocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievements.swift; sourceTree = "<group>"; };
+		ED7DB3081CB305ED00DDEE67 /* hopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hopper.png; sourceTree = "<group>"; };
+		ED7DB30C1CB3062700DDEE67 /* firstBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstBeer.png; sourceTree = "<group>"; };
+		ED7DB3101CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchievementsCollectionViewController.swift; sourceTree = "<group>"; };
+		ED7DB3121CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchievementCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDA278461CAD757C006883EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EDA2784A1CAD8D2F006883EB /* Beerchievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievement.swift; sourceTree = "<group>"; };
 		EDCF43D11C912EFD004A6A6C /* HopJocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopJocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDCF43D91C912EFD004A6A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +95,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED7DB3071CB303B700DDEE67 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED7DB30C1CB3062700DDEE67 /* firstBeer.png */,
+				ED7DB3081CB305ED00DDEE67 /* hopper.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		EDCF43C81C912EFD004A6A6C = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +144,8 @@
 				EDA278461CAD757C006883EB /* User.swift */,
 				EDCF44141CA19990004A6A6C /* Bar.swift */,
 				EDCF44161CA19B5D004A6A6C /* Beer.swift */,
+				EDA2784A1CAD8D2F006883EB /* Beerchievement.swift */,
+				ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -139,6 +162,9 @@
 				EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */,
 				EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */,
 				EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */,
+				ED7DB3101CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift */,
+				ED7DB3121CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift */,
+				ED7DB3071CB303B700DDEE67 /* Images */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -206,6 +232,8 @@
 			files = (
 				EDCF43E21C912EFD004A6A6C /* LaunchScreen.storyboard in Resources */,
 				EDCF43DF1C912EFD004A6A6C /* Assets.xcassets in Resources */,
+				ED7DB30D1CB3062700DDEE67 /* firstBeer.png in Resources */,
+				ED7DB30A1CB305ED00DDEE67 /* hopper.png in Resources */,
 				EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +298,15 @@
 				EDCF44151CA19990004A6A6C /* Bar.swift in Sources */,
 				EDCF43EC1C913799004A6A6C /* LoginViewController.swift in Sources */,
 				EDCF43EA1C9135F7004A6A6C /* BaseService.swift in Sources */,
+				ED7DB3131CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift in Sources */,
+				ED7DB3051CB301CD00DDEE67 /* Beerchievements.swift in Sources */,
+				EDA2784B1CAD8D2F006883EB /* Beerchievement.swift in Sources */,
 				EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */,
 				EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */,
 				EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */,
 				EDA278471CAD757C006883EB /* User.swift in Sources */,
 				EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */,
+				ED7DB3111CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift in Sources */,
 				EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */,
 				EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */,
 				EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */,

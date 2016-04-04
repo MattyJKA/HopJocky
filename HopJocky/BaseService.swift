@@ -16,7 +16,7 @@ let USERS_REF = Firebase(url: "\(BASE_URL)/users")
 let BARS_REF = Firebase(url: "\(BASE_URL)/Bars")
 
 //user object for global use
-var user: User?
+var user: User!
 
 var CURRENT_USER: Firebase{
     let userID = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String

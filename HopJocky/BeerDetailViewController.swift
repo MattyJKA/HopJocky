@@ -43,6 +43,9 @@ class BeerDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func HadBeerButton(sender: AnyObject) {
+        user.addBeer((beerObj?.name)!)
+    }
 
     /*
     // MARK: - Navigation
