@@ -17,6 +17,9 @@ let BARS_REF = Firebase(url: "\(BASE_URL)/Bars")
 
 //user object for global use
 var user: User!
+//a dict of all possible beerchievements
+let beerchievements = Beerchievements()
+let allBeerchievements = beerchievements.dict
 
 var CURRENT_USER: Firebase{
     let userID = NSUserDefaults.standardUserDefaults().valueForKey("uid") as! String

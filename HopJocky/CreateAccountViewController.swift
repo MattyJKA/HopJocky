@@ -64,7 +64,7 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
                             NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                             
                             //add user model to users database
-                            let user = ["email": email!, "password": password!, "beercred": 0]
+                            let user = ["Email": email!, "Password": password!, "Beercred": 0]
                             USERS_REF.childByAppendingPath(authData.uid).setValue(user)
                             
                             print("Account Created :)")

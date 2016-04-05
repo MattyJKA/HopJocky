@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 class Beerchievements: NSObject{
-    private var List = [Beerchievement]()
+    private var Dict = [String: Beerchievement]()
     
-    var list: Array<Beerchievement>{
-        return self.List
+    var dict: [String: Beerchievement]{
+        return self.Dict
     }
     
     override init() {
@@ -23,8 +23,8 @@ class Beerchievements: NSObject{
     }
     
     func populateList(){
-        List.append(Beerchievement(name:"Bar Hopper", howToUnlock: "check into 2 or more bars in one night", reward: 150, image: UIImage(named: "hopper")!))
-        List.append(Beerchievement(name:"I Remember My First Beer", howToUnlock: "Have your first beer on Hopjocky", reward: 100, image: UIImage(named:"firstBeer")!))
+        Dict["Bar Hopper"] = (Beerchievement(name:"Bar Hopper", howToUnlock: "check into 2 or more bars in one night", reward: 150, image: UIImage(named: "hopper")!))
+        Dict["I Remember My First Beer"] = (Beerchievement(name:"I Remember My First Beer", howToUnlock: "Have your first beer on Hopjocky", reward: 100, image: UIImage(named:"firstBeer")!))
         
     }
 }

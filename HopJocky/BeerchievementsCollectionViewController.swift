@@ -11,7 +11,6 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class BeerchievementsCollectionViewController: UICollectionViewController {
-    let beerchievements = Beerchievements()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,19 +44,17 @@ class BeerchievementsCollectionViewController: UICollectionViewController {
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return user.beerchievements.count
-        //return beerchievements.list.count
+        return user.earnedBeerchievements.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BeerchievementCollectionViewCell
     
         // Configure the cell
-        let beerchievementID = user.beerchievements[indexPath.row]
-        let beerchievement = beerchievements.list[beerchievementID]
-        cell.BeerchievementImage.image = beerchievement.image
-//        let beerchievement = beerchievements.list[indexPath.row]
-//        cell.BeerchievementImage.image = beerchievement.image
+        let beerchievementKeys = Array(user.earnedBeerchievements.keys)
+        let beerchievementID = beerchievementKeys[indexPath.row]
+        let beerchievement = allBeerchievements[beerchievementID]
+        cell.BeerchievementImage.image = beerchievement!.image
         return cell
     }
 

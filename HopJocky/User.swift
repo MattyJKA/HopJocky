@@ -16,8 +16,8 @@ class User{
     private var Beercred: Int?
     private var Title: String?
     private var BarsVisted: Array<Array<Any>>? //needs to keep track of bars visted as well as how many times visted
-    private var BeersHad = Array<String>()
-    private var Beerchievements = Array<Int>()
+    private var BeersHad: Dictionary<String, Int> = [:]
+    private var EarnedBeerchievements: Dictionary<String,Int> = [:]
     private var ProfilePic: String?
     
     private var USER_REF: Firebase?
@@ -38,8 +38,12 @@ class User{
         return self.Beercred!
     }
     
-    var beerchievements: Array<Int>{
-        return self.Beerchievements
+    var earnedBeerchievements: Dictionary<String, Int>{
+        return self.EarnedBeerchievements
+    }
+    
+    var beersHad: Dictionary<String, Int>{
+        return self.BeersHad
     }
     
     init(uid: String){
@@ -59,12 +63,18 @@ class User{
     }
     
     func addBeer(beerName: String){
-        if BeersHad.isEmpty{
-            Beerchievements.append(1)
-            //add alert controller to tell user they got a beerchievement, maybe it's own func
+        if(BeersHad[beerName] == nil){
+        
+            if BeersHad.isEmpty{
+                EarnedBeerchievements["I Remember My First Beer"] = earnedBeerchievements.count + 1
+                //add reward
+                //add alert controller to tell user they got a beerchievement, maybe it's own func
+            }
+        
+            BeersHad[beerName] = BeersHad.count + 1
+            checkForBeerchievement()
+            push()
         }
-        BeersHad.append(beerName)
-        checkForBeerchievement()
     }
     
     //check user into a bar
@@ -79,7 +89,9 @@ class User{
     
     //update database with new user info
     func push(){
-        self.USER_REF!.childByAppendingPath("beercred").setValue(self.beercred)
+        self.USER_REF!.childByAppendingPath("Beercred").setValue(self.beercred)
+        self.USER_REF!.childByAppendingPath("Beerchievements").setValue(self.earnedBeerchievements)
+        self.USER_REF!.childByAppendingPath("BeersHad").setValue(self.beersHad)
     }
     
     //check database for new user info
@@ -89,10 +101,15 @@ class User{
             let snap = snapshot.value
             
             if let userDictionary = snap as? Dictionary<String, AnyObject> {
-                self.Email = userDictionary["email"] as? String
-                self.Password = userDictionary["password"] as? String
-                self.Beercred = (userDictionary["beercred"] as? Int)!
-                //add update for beerlist beerchievements
+                self.Email = userDictionary["Email"] as? String
+                self.Password = userDictionary["Password"] as? String
+                self.Beercred = (userDictionary["Beercred"] as? Int)!
+                if let checkBeerchievement = userDictionary["Beerchievements"] as? Dictionary<String, Int>{
+                    self.EarnedBeerchievements = checkBeerchievement
+                }
+                if let checkBeersHad = userDictionary["BeersHad"] as? Dictionary<String, Int>{
+                    self.BeersHad = checkBeersHad
+                }
             }
         })
  
