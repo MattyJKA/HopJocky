@@ -7,54 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */; };
-		ED3A0D851CB5790400ADA574 /* newb.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D841CB5790400ADA574 /* newb.png */; };
-		ED3A0D8A1CB58C8300ADA574 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D861CB58C8300ADA574 /* rain.png */; };
-		ED3A0D8B1CB58C8300ADA574 /* drag.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D871CB58C8300ADA574 /* drag.png */; };
-		ED3A0D8C1CB58C8300ADA574 /* 5 O'clock.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D881CB58C8300ADA574 /* 5 O'clock.png */; };
-		ED3A0D8D1CB58C8300ADA574 /* dirty.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D891CB58C8300ADA574 /* dirty.png */; };
-		ED7DB3051CB301CD00DDEE67 /* Beerchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */; };
-		ED7DB30A1CB305ED00DDEE67 /* hopper.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7DB3081CB305ED00DDEE67 /* hopper.png */; };
-		ED7DB30D1CB3062700DDEE67 /* firstBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7DB30C1CB3062700DDEE67 /* firstBeer.png */; };
-		ED7DB3111CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3101CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift */; };
-		ED7DB3131CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3121CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift */; };
-		EDA278471CAD757C006883EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA278461CAD757C006883EB /* User.swift */; };
-		EDA2784B1CAD8D2F006883EB /* Beerchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2784A1CAD8D2F006883EB /* Beerchievement.swift */; };
+		1F2071FA1CAD75C5009F9AFC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1F2071F91CAD75C5009F9AFC /* Podfile */; };
+		1F83DFB11CB32B1200CCEF71 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83DFB01CB32B1200CCEF71 /* MapTasks.swift */; };
+		988CB4A48CFFE4FCA8A25FE8 /* Pods_HopJocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F99065BA8BB6610FA0587C /* Pods_HopJocky.framework */; };
+		ED3A0DA01CB5975B00ADA574 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D961CB5975B00ADA574 /* ProfileViewController.swift */; };
+		ED3A0DA11CB5975B00ADA574 /* BeerchievementsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D971CB5975B00ADA574 /* BeerchievementsCollectionViewController.swift */; };
+		ED3A0DA21CB5975B00ADA574 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D981CB5975B00ADA574 /* CreateAccountViewController.swift */; };
+		ED3A0DA31CB5975B00ADA574 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D991CB5975B00ADA574 /* BeerDetailViewController.swift */; };
+		ED3A0DA41CB5975B00ADA574 /* BeerchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D9A1CB5975B00ADA574 /* BeerchievementCollectionViewCell.swift */; };
+		ED3A0DA51CB5975B00ADA574 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D9B1CB5975B00ADA574 /* LoginViewController.swift */; };
+		ED3A0DA61CB5975B00ADA574 /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D9C1CB5975B00ADA574 /* BarTableViewController.swift */; };
+		ED3A0DA71CB5975B00ADA574 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D9D1CB5975B00ADA574 /* HomeViewController.swift */; };
+		ED3A0DA81CB5975B00ADA574 /* BarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0D9E1CB5975B00ADA574 /* BarDetailViewController.swift */; };
+		ED3A0DAF1CB5979900ADA574 /* Beerchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DAA1CB5979900ADA574 /* Beerchievements.swift */; };
+		ED3A0DB01CB5979900ADA574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DAB1CB5979900ADA574 /* User.swift */; };
+		ED3A0DB11CB5979900ADA574 /* Beerchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DAC1CB5979900ADA574 /* Beerchievement.swift */; };
+		ED3A0DB21CB5979900ADA574 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DAD1CB5979900ADA574 /* Beer.swift */; };
+		ED3A0DB31CB5979900ADA574 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DAE1CB5979900ADA574 /* Bar.swift */; };
+		ED3A0DB51CB597B500ADA574 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DB41CB597B500ADA574 /* BaseService.swift */; };
+		ED3A0DBD1CB5985800ADA574 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DB81CB5985800ADA574 /* rain.png */; };
+		ED3A0DBE1CB5985800ADA574 /* drag.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DB91CB5985800ADA574 /* drag.png */; };
+		ED3A0DBF1CB5985800ADA574 /* 5 O'clock.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DBA1CB5985800ADA574 /* 5 O'clock.png */; };
+		ED3A0DC01CB5985800ADA574 /* dirty.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DBB1CB5985800ADA574 /* dirty.png */; };
+		ED3A0DC11CB5985800ADA574 /* newb.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DBC1CB5985800ADA574 /* newb.png */; };
+		ED3A0DC41CB5986500ADA574 /* firstBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DC21CB5986500ADA574 /* firstBeer.png */; };
+		ED3A0DC51CB5986500ADA574 /* hopper.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0DC31CB5986500ADA574 /* hopper.png */; };
+		ED3A0DC71CB5992F00ADA574 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3A0DC61CB5992F00ADA574 /* MenuTableViewController.swift */; };
 		EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */; };
 		EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43D81C912EFD004A6A6C /* Main.storyboard */; };
 		EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43DB1C912EFD004A6A6C /* HopJocky.xcdatamodeld */; };
 		EDCF43DF1C912EFD004A6A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */; };
 		EDCF43E21C912EFD004A6A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */; };
-		EDCF43EA1C9135F7004A6A6C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43E91C9135F7004A6A6C /* BaseService.swift */; };
-		EDCF43EC1C913799004A6A6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43EB1C913799004A6A6C /* LoginViewController.swift */; };
-		EDCF43EE1C9137BA004A6A6C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */; };
-		EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44101CA09921004A6A6C /* HomeViewController.swift */; };
-		EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44121CA09930004A6A6C /* ProfileViewController.swift */; };
-		EDCF44151CA19990004A6A6C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44141CA19990004A6A6C /* Bar.swift */; };
-		EDCF44171CA19B5D004A6A6C /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44161CA19B5D004A6A6C /* Beer.swift */; };
-		EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */; };
-		EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */; };
-		EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */; };
-		EDCF44231CA1F86C004A6A6C /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */; };
 		EDCF44251CA1FD5D004A6A6C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.debug.xcconfig"; sourceTree = "<group>"; };
-		6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.release.xcconfig"; sourceTree = "<group>"; };
-		95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopJocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3A0D841CB5790400ADA574 /* newb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newb.png; sourceTree = "<group>"; };
-		ED3A0D861CB58C8300ADA574 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
-		ED3A0D871CB58C8300ADA574 /* drag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drag.png; sourceTree = "<group>"; };
-		ED3A0D881CB58C8300ADA574 /* 5 O'clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5 O'clock.png"; sourceTree = "<group>"; };
-		ED3A0D891CB58C8300ADA574 /* dirty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirty.png; sourceTree = "<group>"; };
-		ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievements.swift; sourceTree = "<group>"; };
-		ED7DB3081CB305ED00DDEE67 /* hopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hopper.png; sourceTree = "<group>"; };
-		ED7DB30C1CB3062700DDEE67 /* firstBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstBeer.png; sourceTree = "<group>"; };
-		ED7DB3101CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchievementsCollectionViewController.swift; sourceTree = "<group>"; };
-		ED7DB3121CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchievementCollectionViewCell.swift; sourceTree = "<group>"; };
-		EDA278461CAD757C006883EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EDA2784A1CAD8D2F006883EB /* Beerchievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievement.swift; sourceTree = "<group>"; };
+		1F2071F91CAD75C5009F9AFC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F83DFB01CB32B1200CCEF71 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
+		61F99065BA8BB6610FA0587C /* Pods_HopJocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopJocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F00BC931FB1A166B28656D0 /* Pods-HopJocky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.release.xcconfig"; sourceTree = "<group>"; };
+		BA73A719F4C9D3B767A9FF82 /* Pods-HopJocky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.debug.xcconfig"; sourceTree = "<group>"; };
+		ED3A0D961CB5975B00ADA574 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ED3A0D971CB5975B00ADA574 /* BeerchievementsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchievementsCollectionViewController.swift; sourceTree = "<group>"; };
+		ED3A0D981CB5975B00ADA574 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		ED3A0D991CB5975B00ADA574 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		ED3A0D9A1CB5975B00ADA574 /* BeerchievementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerchievementCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED3A0D9B1CB5975B00ADA574 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED3A0D9C1CB5975B00ADA574 /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
+		ED3A0D9D1CB5975B00ADA574 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ED3A0D9E1CB5975B00ADA574 /* BarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDetailViewController.swift; sourceTree = "<group>"; };
+		ED3A0DAA1CB5979900ADA574 /* Beerchievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievements.swift; sourceTree = "<group>"; };
+		ED3A0DAB1CB5979900ADA574 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED3A0DAC1CB5979900ADA574 /* Beerchievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievement.swift; sourceTree = "<group>"; };
+		ED3A0DAD1CB5979900ADA574 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		ED3A0DAE1CB5979900ADA574 /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		ED3A0DB41CB597B500ADA574 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		ED3A0DB81CB5985800ADA574 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		ED3A0DB91CB5985800ADA574 /* drag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drag.png; sourceTree = "<group>"; };
+		ED3A0DBA1CB5985800ADA574 /* 5 O'clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5 O'clock.png"; sourceTree = "<group>"; };
+		ED3A0DBB1CB5985800ADA574 /* dirty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirty.png; sourceTree = "<group>"; };
+		ED3A0DBC1CB5985800ADA574 /* newb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newb.png; sourceTree = "<group>"; };
+		ED3A0DC21CB5986500ADA574 /* firstBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstBeer.png; sourceTree = "<group>"; };
+		ED3A0DC31CB5986500ADA574 /* hopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hopper.png; sourceTree = "<group>"; };
+		ED3A0DC61CB5992F00ADA574 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		EDCF43D11C912EFD004A6A6C /* HopJocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopJocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDCF43D91C912EFD004A6A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,17 +77,6 @@
 		EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDCF43E11C912EFD004A6A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDCF43E31C912EFD004A6A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDCF43E91C9135F7004A6A6C /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		EDCF43EB1C913799004A6A6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		EDCF44101CA09921004A6A6C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EDCF44121CA09930004A6A6C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EDCF44141CA19990004A6A6C /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
-		EDCF44161CA19B5D004A6A6C /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
-		EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
-		EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDetailViewController.swift; sourceTree = "<group>"; };
-		EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,40 +85,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */,
+				988CB4A48CFFE4FCA8A25FE8 /* Pods_HopJocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1419A2F94313F1C035B57E43 /* Frameworks */ = {
+		9ED1D10CA540AE607A23F5A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */,
+				61F99065BA8BB6610FA0587C /* Pods_HopJocky.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2C2FDEC38B62CCDE82E045F8 /* Pods */ = {
+		BC2207350B4F5FDB8F8F8528 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */,
-				6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */,
+				BA73A719F4C9D3B767A9FF82 /* Pods-HopJocky.debug.xcconfig */,
+				6F00BC931FB1A166B28656D0 /* Pods-HopJocky.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		ED7DB3071CB303B700DDEE67 /* Images */ = {
+		ED3A0DB71CB5980E00ADA574 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				ED3A0D861CB58C8300ADA574 /* rain.png */,
-				ED3A0D871CB58C8300ADA574 /* drag.png */,
-				ED3A0D881CB58C8300ADA574 /* 5 O'clock.png */,
-				ED3A0D891CB58C8300ADA574 /* dirty.png */,
-				ED3A0D841CB5790400ADA574 /* newb.png */,
-				ED7DB30C1CB3062700DDEE67 /* firstBeer.png */,
-				ED7DB3081CB305ED00DDEE67 /* hopper.png */,
+				ED3A0DC21CB5986500ADA574 /* firstBeer.png */,
+				ED3A0DC31CB5986500ADA574 /* hopper.png */,
+				ED3A0DB81CB5985800ADA574 /* rain.png */,
+				ED3A0DB91CB5985800ADA574 /* drag.png */,
+				ED3A0DBA1CB5985800ADA574 /* 5 O'clock.png */,
+				ED3A0DBB1CB5985800ADA574 /* dirty.png */,
+				ED3A0DBC1CB5985800ADA574 /* newb.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -122,10 +126,12 @@
 		EDCF43C81C912EFD004A6A6C = {
 			isa = PBXGroup;
 			children = (
+				1F2071F91CAD75C5009F9AFC /* Podfile */,
+				EDCF43D81C912EFD004A6A6C /* Main.storyboard */,
 				EDCF43D31C912EFD004A6A6C /* HopJocky */,
 				EDCF43D21C912EFD004A6A6C /* Products */,
-				2C2FDEC38B62CCDE82E045F8 /* Pods */,
-				1419A2F94313F1C035B57E43 /* Frameworks */,
+				BC2207350B4F5FDB8F8F8528 /* Pods */,
+				9ED1D10CA540AE607A23F5A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,10 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				EDCF43D41C912EFD004A6A6C /* AppDelegate.swift */,
-				EDCF43E91C9135F7004A6A6C /* BaseService.swift */,
+				ED3A0DB41CB597B500ADA574 /* BaseService.swift */,
 				EDCF44261CA23731004A6A6C /* Model */,
 				EDCF44271CA2374D004A6A6C /* ViewControllers */,
-				EDCF43D81C912EFD004A6A6C /* Main.storyboard */,
+				ED3A0DB71CB5980E00ADA574 /* Images */,
 				EDCF43DE1C912EFD004A6A6C /* Assets.xcassets */,
 				EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */,
 				EDCF43E31C912EFD004A6A6C /* Info.plist */,
@@ -156,11 +162,11 @@
 		EDCF44261CA23731004A6A6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EDA278461CAD757C006883EB /* User.swift */,
-				EDCF44141CA19990004A6A6C /* Bar.swift */,
-				EDCF44161CA19B5D004A6A6C /* Beer.swift */,
-				EDA2784A1CAD8D2F006883EB /* Beerchievement.swift */,
-				ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */,
+				ED3A0DAB1CB5979900ADA574 /* User.swift */,
+				ED3A0DAD1CB5979900ADA574 /* Beer.swift */,
+				ED3A0DAE1CB5979900ADA574 /* Bar.swift */,
+				ED3A0DAC1CB5979900ADA574 /* Beerchievement.swift */,
+				ED3A0DAA1CB5979900ADA574 /* Beerchievements.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -168,18 +174,18 @@
 		EDCF44271CA2374D004A6A6C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EDCF43EB1C913799004A6A6C /* LoginViewController.swift */,
-				EDCF43ED1C9137BA004A6A6C /* CreateAccountViewController.swift */,
-				EDCF44101CA09921004A6A6C /* HomeViewController.swift */,
-				EDCF44121CA09930004A6A6C /* ProfileViewController.swift */,
-				EDCF441A1CA1A02D004A6A6C /* BarTableViewController.swift */,
-				EDCF441C1CA1A0FD004A6A6C /* BarDetailViewController.swift */,
-				EDCF44201CA1B781004A6A6C /* MenuTableViewController.swift */,
-				EDCF44221CA1F86C004A6A6C /* BeerDetailViewController.swift */,
+				ED3A0D9B1CB5975B00ADA574 /* LoginViewController.swift */,
+				ED3A0D981CB5975B00ADA574 /* CreateAccountViewController.swift */,
+				ED3A0D9D1CB5975B00ADA574 /* HomeViewController.swift */,
+				ED3A0D961CB5975B00ADA574 /* ProfileViewController.swift */,
+				ED3A0D971CB5975B00ADA574 /* BeerchievementsCollectionViewController.swift */,
+				ED3A0D9A1CB5975B00ADA574 /* BeerchievementCollectionViewCell.swift */,
+				ED3A0D9C1CB5975B00ADA574 /* BarTableViewController.swift */,
+				ED3A0D9E1CB5975B00ADA574 /* BarDetailViewController.swift */,
+				ED3A0DC61CB5992F00ADA574 /* MenuTableViewController.swift */,
+				ED3A0D991CB5975B00ADA574 /* BeerDetailViewController.swift */,
 				EDCF44241CA1FD5D004A6A6C /* MapViewController.swift */,
-				ED7DB3101CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift */,
-				ED7DB3121CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift */,
-				ED7DB3071CB303B700DDEE67 /* Images */,
+				1F83DFB01CB32B1200CCEF71 /* MapTasks.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -191,12 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDCF43E61C912EFD004A6A6C /* Build configuration list for PBXNativeTarget "HopJocky" */;
 			buildPhases = (
-				A7278E4701EB2C1EC76D27C0 /* Check Pods Manifest.lock */,
+				DFEB24EFBC447433BDCB0AA3 /* 📦 Check Pods Manifest.lock */,
 				EDCF43CD1C912EFD004A6A6C /* Sources */,
 				EDCF43CE1C912EFD004A6A6C /* Frameworks */,
 				EDCF43CF1C912EFD004A6A6C /* Resources */,
-				C7AC660B4092C6C6B442A8B8 /* Embed Pods Frameworks */,
-				1813F9F58DA992472CAAC2FE /* Copy Pods Resources */,
+				CC01BA656472EF987F41E0E4 /* 📦 Embed Pods Frameworks */,
+				EB0EFBE74A66DC40D10F9D1D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,45 +251,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A0D8D1CB58C8300ADA574 /* dirty.png in Resources */,
+				ED3A0DC01CB5985800ADA574 /* dirty.png in Resources */,
 				EDCF43E21C912EFD004A6A6C /* LaunchScreen.storyboard in Resources */,
-				ED3A0D8B1CB58C8300ADA574 /* drag.png in Resources */,
+				ED3A0DC41CB5986500ADA574 /* firstBeer.png in Resources */,
+				ED3A0DC11CB5985800ADA574 /* newb.png in Resources */,
+				ED3A0DBD1CB5985800ADA574 /* rain.png in Resources */,
 				EDCF43DF1C912EFD004A6A6C /* Assets.xcassets in Resources */,
-				ED3A0D8A1CB58C8300ADA574 /* rain.png in Resources */,
-				ED7DB30D1CB3062700DDEE67 /* firstBeer.png in Resources */,
-				ED7DB30A1CB305ED00DDEE67 /* hopper.png in Resources */,
-				ED3A0D8C1CB58C8300ADA574 /* 5 O'clock.png in Resources */,
+				1F2071FA1CAD75C5009F9AFC /* Podfile in Resources */,
+				ED3A0DC51CB5986500ADA574 /* hopper.png in Resources */,
 				EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */,
-				ED3A0D851CB5790400ADA574 /* newb.png in Resources */,
+				ED3A0DBE1CB5985800ADA574 /* drag.png in Resources */,
+				ED3A0DBF1CB5985800ADA574 /* 5 O'clock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1813F9F58DA992472CAAC2FE /* Copy Pods Resources */ = {
+		CC01BA656472EF987F41E0E4 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A7278E4701EB2C1EC76D27C0 /* Check Pods Manifest.lock */ = {
+		DFEB24EFBC447433BDCB0AA3 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,19 +298,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C7AC660B4092C6C6B442A8B8 /* Embed Pods Frameworks */ = {
+		EB0EFBE74A66DC40D10F9D1D /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -313,25 +320,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCF43EE1C9137BA004A6A6C /* CreateAccountViewController.swift in Sources */,
-				EDCF44171CA19B5D004A6A6C /* Beer.swift in Sources */,
-				EDCF44151CA19990004A6A6C /* Bar.swift in Sources */,
-				EDCF43EC1C913799004A6A6C /* LoginViewController.swift in Sources */,
-				EDCF43EA1C9135F7004A6A6C /* BaseService.swift in Sources */,
-				ED7DB3131CB3174200DDEE67 /* BeerchievementCollectionViewCell.swift in Sources */,
-				ED7DB3051CB301CD00DDEE67 /* Beerchievements.swift in Sources */,
-				EDA2784B1CAD8D2F006883EB /* Beerchievement.swift in Sources */,
+				ED3A0DB31CB5979900ADA574 /* Bar.swift in Sources */,
+				ED3A0DA21CB5975B00ADA574 /* CreateAccountViewController.swift in Sources */,
+				ED3A0DB21CB5979900ADA574 /* Beer.swift in Sources */,
+				ED3A0DA31CB5975B00ADA574 /* BeerDetailViewController.swift in Sources */,
+				ED3A0DA11CB5975B00ADA574 /* BeerchievementsCollectionViewController.swift in Sources */,
+				ED3A0DB01CB5979900ADA574 /* User.swift in Sources */,
 				EDCF43D51C912EFD004A6A6C /* AppDelegate.swift in Sources */,
-				EDCF44131CA09930004A6A6C /* ProfileViewController.swift in Sources */,
-				EDCF441D1CA1A0FD004A6A6C /* BarDetailViewController.swift in Sources */,
-				EDA278471CAD757C006883EB /* User.swift in Sources */,
-				EDCF44211CA1B781004A6A6C /* MenuTableViewController.swift in Sources */,
-				ED7DB3111CB3139700DDEE67 /* BeerchievementsCollectionViewController.swift in Sources */,
-				EDCF441B1CA1A02D004A6A6C /* BarTableViewController.swift in Sources */,
+				ED3A0DC71CB5992F00ADA574 /* MenuTableViewController.swift in Sources */,
+				ED3A0DB51CB597B500ADA574 /* BaseService.swift in Sources */,
+				1F83DFB11CB32B1200CCEF71 /* MapTasks.swift in Sources */,
+				ED3A0DAF1CB5979900ADA574 /* Beerchievements.swift in Sources */,
+				ED3A0DA01CB5975B00ADA574 /* ProfileViewController.swift in Sources */,
 				EDCF43DD1C912EFD004A6A6C /* HopJocky.xcdatamodeld in Sources */,
-				EDCF44111CA09921004A6A6C /* HomeViewController.swift in Sources */,
-				EDCF44231CA1F86C004A6A6C /* BeerDetailViewController.swift in Sources */,
 				EDCF44251CA1FD5D004A6A6C /* MapViewController.swift in Sources */,
+				ED3A0DA51CB5975B00ADA574 /* LoginViewController.swift in Sources */,
+				ED3A0DB11CB5979900ADA574 /* Beerchievement.swift in Sources */,
+				ED3A0DA41CB5975B00ADA574 /* BeerchievementCollectionViewCell.swift in Sources */,
+				ED3A0DA61CB5975B00ADA574 /* BarTableViewController.swift in Sources */,
+				ED3A0DA71CB5975B00ADA574 /* HomeViewController.swift in Sources */,
+				ED3A0DA81CB5975B00ADA574 /* BarDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +352,7 @@
 				EDCF43D91C912EFD004A6A6C /* Base */,
 			);
 			name = Main.storyboard;
+			path = HopJocky;
 			sourceTree = "<group>";
 		};
 		EDCF43E01C912EFD004A6A6C /* LaunchScreen.storyboard */ = {
@@ -440,7 +449,7 @@
 		};
 		EDCF43E71C912EFD004A6A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */;
+			baseConfigurationReference = BA73A719F4C9D3B767A9FF82 /* Pods-HopJocky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HopJocky/Info.plist;
@@ -452,7 +461,7 @@
 		};
 		EDCF43E81C912EFD004A6A6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */;
+			baseConfigurationReference = 6F00BC931FB1A166B28656D0 /* Pods-HopJocky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HopJocky/Info.plist;
