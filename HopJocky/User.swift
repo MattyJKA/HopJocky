@@ -17,8 +17,8 @@ class User{
     private var Title: String?
     private var BarsVisted: Array<Array<Any>>? //needs to keep track of bars visted as well as how many times visted
     private var BeersHad: Dictionary<String, Int> = [:]
-    private var EarnedBeerchievements: Dictionary<String,Int> = [:]
-    private var ProfilePic: String?
+    private var EarnedBeerchievements: Dictionary<String,Int> = ["Newb": 0]
+    private var ProfilePic = "Newb"
     
     private var USER_REF: Firebase?
 
@@ -46,6 +46,10 @@ class User{
         return self.BeersHad
     }
     
+    var profilepic: String{
+        return self.ProfilePic
+    }
+    
     init(uid: String){
         self.Uid = uid
         self.Email = nil
@@ -53,9 +57,13 @@ class User{
         self.Beercred = nil
         self.Title = nil
         self.BarsVisted = nil
-        self.ProfilePic = nil
         
         self.USER_REF = Firebase(url: "\(BASE_URL)/users/\(self.Uid!)")
+    }
+    
+    func changeProfilePic(picName: String){
+        self.ProfilePic = picName
+        push()
     }
     
     func addCred(earnedCred: Int){
@@ -92,6 +100,7 @@ class User{
         self.USER_REF!.childByAppendingPath("Beercred").setValue(self.beercred)
         self.USER_REF!.childByAppendingPath("Beerchievements").setValue(self.earnedBeerchievements)
         self.USER_REF!.childByAppendingPath("BeersHad").setValue(self.beersHad)
+        self.USER_REF!.childByAppendingPath("ProfilePic").setValue(self.profilepic)
     }
     
     //check database for new user info
@@ -109,6 +118,9 @@ class User{
                 }
                 if let checkBeersHad = userDictionary["BeersHad"] as? Dictionary<String, Int>{
                     self.BeersHad = checkBeersHad
+                }
+                if let pic = userDictionary["ProfilePic"] as? String{
+                    self.ProfilePic = pic
                 }
             }
         })

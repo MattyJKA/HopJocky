@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AF9338BB96CC6744BCB5DDCE /* Pods_HopJocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */; };
+		ED3A0D851CB5790400ADA574 /* newb.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D841CB5790400ADA574 /* newb.png */; };
+		ED3A0D8A1CB58C8300ADA574 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D861CB58C8300ADA574 /* rain.png */; };
+		ED3A0D8B1CB58C8300ADA574 /* drag.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D871CB58C8300ADA574 /* drag.png */; };
+		ED3A0D8C1CB58C8300ADA574 /* 5 O'clock.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D881CB58C8300ADA574 /* 5 O'clock.png */; };
+		ED3A0D8D1CB58C8300ADA574 /* dirty.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3A0D891CB58C8300ADA574 /* dirty.png */; };
 		ED7DB3051CB301CD00DDEE67 /* Beerchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */; };
 		ED7DB30A1CB305ED00DDEE67 /* hopper.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7DB3081CB305ED00DDEE67 /* hopper.png */; };
 		ED7DB30D1CB3062700DDEE67 /* firstBeer.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7DB30C1CB3062700DDEE67 /* firstBeer.png */; };
@@ -38,6 +43,11 @@
 		2C46F22CF8E0483D2082189F /* Pods-HopJocky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.debug.xcconfig"; sourceTree = "<group>"; };
 		6893627F227C0761C69717DB /* Pods-HopJocky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopJocky.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopJocky/Pods-HopJocky.release.xcconfig"; sourceTree = "<group>"; };
 		95B2DEBD1AA4121ADDB2C0E1 /* Pods_HopJocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopJocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3A0D841CB5790400ADA574 /* newb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newb.png; sourceTree = "<group>"; };
+		ED3A0D861CB58C8300ADA574 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		ED3A0D871CB58C8300ADA574 /* drag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drag.png; sourceTree = "<group>"; };
+		ED3A0D881CB58C8300ADA574 /* 5 O'clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5 O'clock.png"; sourceTree = "<group>"; };
+		ED3A0D891CB58C8300ADA574 /* dirty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirty.png; sourceTree = "<group>"; };
 		ED7DB3041CB301CD00DDEE67 /* Beerchievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beerchievements.swift; sourceTree = "<group>"; };
 		ED7DB3081CB305ED00DDEE67 /* hopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hopper.png; sourceTree = "<group>"; };
 		ED7DB30C1CB3062700DDEE67 /* firstBeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstBeer.png; sourceTree = "<group>"; };
@@ -98,6 +108,11 @@
 		ED7DB3071CB303B700DDEE67 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ED3A0D861CB58C8300ADA574 /* rain.png */,
+				ED3A0D871CB58C8300ADA574 /* drag.png */,
+				ED3A0D881CB58C8300ADA574 /* 5 O'clock.png */,
+				ED3A0D891CB58C8300ADA574 /* dirty.png */,
+				ED3A0D841CB5790400ADA574 /* newb.png */,
 				ED7DB30C1CB3062700DDEE67 /* firstBeer.png */,
 				ED7DB3081CB305ED00DDEE67 /* hopper.png */,
 			);
@@ -230,11 +245,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3A0D8D1CB58C8300ADA574 /* dirty.png in Resources */,
 				EDCF43E21C912EFD004A6A6C /* LaunchScreen.storyboard in Resources */,
+				ED3A0D8B1CB58C8300ADA574 /* drag.png in Resources */,
 				EDCF43DF1C912EFD004A6A6C /* Assets.xcassets in Resources */,
+				ED3A0D8A1CB58C8300ADA574 /* rain.png in Resources */,
 				ED7DB30D1CB3062700DDEE67 /* firstBeer.png in Resources */,
 				ED7DB30A1CB305ED00DDEE67 /* hopper.png in Resources */,
+				ED3A0D8C1CB58C8300ADA574 /* 5 O'clock.png in Resources */,
 				EDCF43DA1C912EFD004A6A6C /* Main.storyboard in Resources */,
+				ED3A0D851CB5790400ADA574 /* newb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

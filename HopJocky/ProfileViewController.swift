@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var beercredLabel: UILabel!
+    @IBOutlet weak var profilePic: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class ProfileViewController: UIViewController {
         self.emailLabel.text = user?.email
         self.passwordLabel.text = user?.password
         self.beercredLabel.text = String(user!.beercred)
+        self.profilePic.image = allBeerchievements[user.profilepic]?.image
     }
 
     override func didReceiveMemoryWarning() {

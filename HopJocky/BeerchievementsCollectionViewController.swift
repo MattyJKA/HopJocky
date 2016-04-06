@@ -11,6 +11,8 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class BeerchievementsCollectionViewController: UICollectionViewController {
+    var alertController:UIAlertController? = nil
+    let beerchievementKeys = Array(user.earnedBeerchievements.keys)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +53,7 @@ class BeerchievementsCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BeerchievementCollectionViewCell
     
         // Configure the cell
-        let beerchievementKeys = Array(user.earnedBeerchievements.keys)
-        let beerchievementID = beerchievementKeys[indexPath.row]
+        let beerchievementID = self.beerchievementKeys[indexPath.row]
         let beerchievement = allBeerchievements[beerchievementID]
         cell.BeerchievementImage.image = beerchievement!.image
         return cell
@@ -60,6 +61,24 @@ class BeerchievementsCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let beerchievementID = self.beerchievementKeys[indexPath.row]
+        let beerchievement = allBeerchievements[beerchievementID]
+        
+        self.alertController = UIAlertController(title: "\(beerchievement!.name)", message: "\(beerchievement!.howToUnlock)", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okAction = UIAlertAction(title: "Make Profile Pic", style: UIAlertActionStyle.Default) { (action:UIAlertAction) in
+            user.changeProfilePic("\(beerchievement!.name)")
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (action:UIAlertAction) in
+        }
+        
+        self.alertController!.addAction(okAction)
+        self.alertController!.addAction(cancelAction)
+        
+        self.presentViewController(self.alertController!, animated: true, completion:nil)
+    }
+    
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
